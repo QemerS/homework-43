@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a JS program to get width and height of the
+        // window (any time the window resized)
+        window.addEventListener('resize', handler);
+        function handler(e) {
+            const theTarget = e.target;
+            console.log(`the width is : ${theTarget.innerWidth} and the height is: ${theTarget.innerHeight}`);
+        }
+    </script>
+</body>
+</html>
